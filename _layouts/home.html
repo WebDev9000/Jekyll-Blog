@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="home">
+	{%- if page.title -%}
+	<h1 class="page-heading">{{ page.title }}</h1>
+	{%- endif -%}
+
+	<div id="home" class="home">
+		<div class="text-center">
+			<h1>Tony Peak</h1>
+			<h3>Full-Stack Web Developer & Graphic Artist</h3>
+		</div>
+	</div>
+
+	<div id="software" class="software-col-wrapper">
+		<div class="software-col software-col-1 text-center">
+			<img src="/assets/img/software.png" alt="HTML5, CSS3, Angular, Vue, React, PHP logos" />
+		</div>
+		<div class="software-col software-col-2">
+			<ul class="fa-ul info">
+				<li><i class="fa-li fa fa-user-circle-o"></i> Loacated on the West Coast, USA</li>
+				<li><i class="fa-li fa fa-briefcase"></i> 10+ years of on the job Web Developer experience</li>
+				<li><i class="fa-li fa fa-clock-o"></i> 25+ years of enthusiast programming experience</li>
+				<li><i class="fa-li fa fa-code"></i> Proficient in over 10 development related languages</li>
+				<li><i class="fa-li fa fa-credit-card"></i> First-hand development of eCommerce, eLearning, and
+					Healthcare Management solutions</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="services">
+		<div class="container">
+			<div class="services-col-wrapper text-center">
+				<div class="services-col services-col-1">
+					<i class="glyphicon glyphicon-cog"> </i>
+					<h4>Backend</h4>
+					<p>PHP, Laravel, C#, VBScript, Jekyll, Firebase, MySQL, MSSQL, SQLite, Slim Framework</p>
+				</div>
+				<div class="services-col services-col-2">
+					<i class="glyphicon glyphicon-duplicate"> </i>
+					<h4>Frontend</h4>
+					<p>HTML 5, CSS 3, Bootstrap, Markdown, JavaScript, JQuery, Angular, React, Vue.js, WordPress</p>
+				</div>
+				<div class="services-col services-col-3">
+					<i class="glyphicon glyphicon-cloud"> </i>
+					<h4>Infrastructure</h4>
+					<p>Git, SVN, NPM, Composer, Apache, Microsoft IIS, Lighttpd, Cordova, Electron,
+						Amazon EC2, Route 53</p>
+				</div>
+				<div class="services-col services-col-4">
+					<i class="glyphicon glyphicon-picture"> </i>
+					<h4>Design</h4>
+					<p>Photoshop, Illustrator, Substance, Zbrush, Blender, Fusion 360, Metashape, DALL-E, Stable Diffusion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{%- if site.posts.size > 0 -%}
+	<h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+	<ul class="post-list">
+		{%- for post in site.posts limit:1 -%}
+		<li>
+			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+			<span class="post-meta">{{ post.date | date: date_format }}</span>
+			<h3>
+				<a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
+				</a>
+			</h3>
+			{%- if site.show_excerpts -%}
+			{{ post.excerpt }}
+			{%- endif -%}
+		</li>
+		{%- endfor -%}
+	</ul>
+
+	<p>See <a href="{{ "/posts/" | relative_url }}">All Posts</a></p>
+
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+	{%- endif -%}
+
+</div>
