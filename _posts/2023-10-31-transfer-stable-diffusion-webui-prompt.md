@@ -1,9 +1,12 @@
 ---
+title: Transfer Stable Diffusion WebUI prompt metadata between two JPEG or PNG files
 layout: post
-title: "Transfer Stable Diffusion WebUI prompt metadata between two JPEG or PNG files"
-description: "Development related tips and tricks from an experienced developer."
-date: 2023-10-31 14:36:12 -0700
-categories: tools ai-art cli
+description: Development related tips and tricks from an experienced developer.
+date: '2023-10-31 14:36:12 -0700'
+categories:
+- tools
+- ai-art
+- cli
 ---
 
 Download [ExifTool][exiftool]
@@ -27,7 +30,7 @@ For `.PNG` files, the following must be included in `.ExifTool_config` in the us
 
 Note: transferring between a `.JPEG` and a `.PNG` file is not supported with this method.
 
-*Source: [ExifTool FAQ][exiftool-faq]*
+*More info: [ExifTool FAQ][exiftool-faq]{:target="_blank"}*
 
 [exiftool]: https://exiftool.org
 [exiftool-faq]: https://exiftool.org/faq.html
