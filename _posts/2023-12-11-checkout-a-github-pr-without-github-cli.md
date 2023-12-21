@@ -4,6 +4,7 @@ title: Checkout a Github Pull Request without Github CLI
 date: 2023-12-11 15:53 -0800
 description: Development related tips and tricks from an experienced developer.
 categories:
+- git
 ---
 
 Any github Pull Request (PR) can be used locally, even before it's been accepted.  Simply copy the #ID after the PR title, or from the URL: /pull/ID.
