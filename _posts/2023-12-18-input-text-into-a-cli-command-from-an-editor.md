@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input Text into a CLI Command from an Editor
+title: Input Text into a Command-Line Argument from an Editor
 date: 2023-12-18 09:17 -0800
 description: Development related tips and tricks from an experienced developer.
 categories:
@@ -22,10 +22,30 @@ This will start the Micro editor, where you can enter (potentially large amounts
 It works well in scripts:
 
 {% highlight powershell %}
+$prompt = $args[0]
 # If no prompt, start an editor
 if (!$prompt) {
-  $prompt = "$(micro)";
+  $prompt = "$(micro)"
 }
+invoke-expression "D:\llamacpp\main.exe -p '$prompt'"
 {% endhighlight %}
 
 and it also only stores "$(micro)" in your command history, which avoids long input clutter.
+
+### Opening a file in the editor
+
+While opening a file inside Micro after-the-fact doesn't appear to correctly pass the information back to the CLI, you *can* start with a file quite easily with:
+
+{% highlight powershell %}
+# CLI
+./main -p "$(micro D:\myfile.txt)"
+{% endhighlight %}
+
+{% highlight powershell %}
+# Script
+$file = "D:/myfile.txt"
+$prompt = "$(micro $file)"
+invoke-expression "D:\llamacpp\main.exe -p '$prompt'"
+{% endhighlight %}
+
+This will start the editor with the file open, *and* pass any changes back to the command-line on exit ***without*** modifying the original file.

@@ -9,15 +9,14 @@ categories:
 - cli
 ---
 
-Download [ExifTool][exiftool]
+First, Download [ExifTool][exiftool] from the official website.  Then:
 
 {% highlight powershell %}
 # Files must be the same extension
 exiftool -TagsFromFile FileA.jpeg -overwrite_original FileB.jpeg
 {% endhighlight %}
-<br />
-
-For `.PNG` files, the following must be included in `.ExifTool_config` in the user's `HOME` directory.
+<br/>
+For `.PNG` files, the following must be included in `.ExifTool_config` in the user's `HOME` directory:
 
 {% highlight config %}
 %Image::ExifTool::UserDefined = (
@@ -26,9 +25,8 @@ For `.PNG` files, the following must be included in `.ExifTool_config` in the us
     },
 );
 {% endhighlight %}
-<br />
 
-Note: transferring between a `.JPEG` and a `.PNG` file is not supported with this method.
+Note that transferring between a `.JPEG` and a `.PNG` file is not supported with this method.
 
 *More info: [ExifTool FAQ][exiftool-faq]{:target="_blank"}*
 

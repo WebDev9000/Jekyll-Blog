@@ -95,7 +95,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
+div[itemprop="articleBody"] h2, div[itemprop="articleBody"] h3, div[itemprop="articleBody"] h4, div[itemprop="articleBody"] h5, div[itemprop="articleBody"] h6 {
+  margin-top: 40px;
+}
 
 /**
  * Links
