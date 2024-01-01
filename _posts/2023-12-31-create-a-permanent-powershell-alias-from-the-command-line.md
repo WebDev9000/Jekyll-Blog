@@ -4,6 +4,8 @@ title: Create a Permanent Powershell Alias from the Command-Line
 date: 2023-12-31 22:07 -0800
 description: Development related tips and tricks from an experienced developer.
 categories:
+- cli
+- powershell
 ---
 
 First, open your Powershell profile in your editor:

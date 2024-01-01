@@ -4,6 +4,8 @@ title: Input Text into a Command-Line Argument from an Editor
 date: 2023-12-18 09:17 -0800
 description: Development related tips and tricks from an experienced developer.
 categories:
+- cli
+- powershell
 ---
 
 The convienient open source editor [Micro](https://github.com/zyedidia/micro) has a nice feature which allows it to easily create buffers from stdin, and send the data of the open buffer to the pipe when it exits.
