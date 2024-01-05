@@ -21,7 +21,7 @@ For example:
 {% highlight powershell %}
 git fetch origin pull/123/head:123 && git checkout 123
 {% endhighlight %}
-*More info: [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally)*
+*More info: [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally){:target="_blank"}*
 
 <br />
 
@@ -35,4 +35,4 @@ git pr 123
 {% endhighlight %}
 
 
-*Source: [Tom Hale - Git alias with positional parameters](https://stackoverflow.com/a/39523506)*
+*Source: [Tom Hale - Git alias with positional parameters](https://stackoverflow.com/a/39523506){:target="_blank"}*

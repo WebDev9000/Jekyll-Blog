@@ -8,7 +8,7 @@ categories:
 - powershell
 ---
 
-First, open your Powershell profile in your editor:
+First, open your [Powershell](https://www.microsoft.com/store/apps/9MZ1SNWT0N5D){:target="_blank"} profile in your editor:
 
 {% highlight powershell %}
 code $PROFILE

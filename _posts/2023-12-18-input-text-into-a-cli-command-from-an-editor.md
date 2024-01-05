@@ -8,12 +8,12 @@ categories:
 - powershell
 ---
 
-The convienient open source editor [Micro](https://github.com/zyedidia/micro) has a nice feature which allows it to easily create buffers from stdin, and send the data of the open buffer to the pipe when it exits.
+The convienient open source editor [Micro](https://github.com/zyedidia/micro){:target="_blank"} has a nice feature which allows it to easily create buffers from stdin, and send the data of the open buffer to the pipe when it exits.
 
 For example: ```ifconfig | micro | cat```
 
 Similarly, you can use Micro in a subprocess to "inject" text into a CLI command.
-E.g. with [Llama.cpp](https://github.com/ggerganov/llama.cpp):
+E.g. with [Llama.cpp](https://github.com/ggerganov/llama.cpp){:target="_blank"}:
 
 {% highlight powershell %}
 ./main -ngl 8 --color -c 2048 --temp 0.7 --repeat_penalty 1.1 -n -1 -p "$(micro)"

@@ -9,7 +9,7 @@ categories:
 - cli
 ---
 
-First, Download [ExifTool][exiftool] from the official website.  Then:
+First, Download [ExifTool][exiftool]{:target="_blank"} from the official website.  Then:
 
 {% highlight powershell %}
 # Files must be the same extension
