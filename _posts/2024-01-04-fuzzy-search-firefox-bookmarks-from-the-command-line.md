@@ -12,8 +12,7 @@ Tools you'll need:
 * [Powershell v7+](https://www.microsoft.com/store/apps/9MZ1SNWT0N5D){:target="_blank"}
 * [Sqlite](https://www.sqlite.org/index.html){:target="_blank"}
 * [FZF](https://github.com/junegunn/fzf){:target="_blank"}
-* Cut & Xargs: Windows, install [Cygwin](https://cygwin.com/){:target="_blank"}
-* * Use in Powershell by adding (e.g.) `C:\cygwin64\bin` to your PATH.
+* Cut & Xargs: [How to use in Powershell](/cli/powershell/2024/01/13/using-gnu-utilities-in-powershell.html)
 
 I'll demonstrate adding a Powershell alias below, but due to using cross-platform tools, the final command used should be fairly similar when used in a Bash / ZSH alias.
 
@@ -49,4 +48,4 @@ Now simply type `ffb` (for "**F**ire**F**ox **B**ookmarks) to do a fuzzy search 
 
 Note: Any bookmarks with a `|` in their name will use `::` in the search to avoid conflicting with the SQL output format.  This will not edit your bookmarks.
 
-*More info: [Profiles - Where Firefox stores your bookmarks, passwords and other user data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data){:target="_blank"}*<br/>
+*More info: [Profiles - Where Firefox stores your bookmarks, passwords and other user data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data){:target="_blank"}*

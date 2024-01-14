@@ -50,3 +50,5 @@ alias gc-m 'git commit -m "$args"' && . $PROFILE
 # > gc-m "init"
 # Equal to: git commit -m "init"
 {% endhighlight %}
+
+*More info: [Using Powershell Aliases in a Pipeline](/cli/powershell/2024/01/13/using-powershell-aliases-in-a-pipeline.html)*
